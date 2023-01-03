@@ -1,0 +1,105 @@
+/* -- CSS Reset --*/
+*
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video,button,textarea,input,select {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    overflow-x: hidden;
+}
+html, body {
+    min-height: 100%;
+  }
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+/*--- CS Variables ---*/
+:root{
+    --clr-fc-claro:#ffffff;
+    --clr-fc-oscuro:#464646;
+    --clr-bg-primario:rgba(242,213,126,1);
+    --clr-bg-secundario: rgba(242,242,242,1);
+    --clr-bg-terciario: #f2c230;
+  }
+  /**--- Basic page Styles --- **/
+*{
+    font-family: 'Roboto', sans-serif;
+    color: var( --clr-fc-oscuro);
+}
+.line{
+    box-shadow: 1px 1px 1px #C8C8C8;
+}
+
+
+
+.header_container{
+    background: linear-gradient( 0deg,#f2d57e 0%,#f2c230 30%);
+  }
+  .presentacion_container{
+    background: linear-gradient(0deg, var(--clr-bg-secundario) 2%, var(--clr-bg-primario) 7%);;
+  }
+  .sobremi_container{
+    background-color: var(--clr-bg-secundario)
+  }
+  .skills_container{
+    background: var(--clr-bg-primario);
+    background: linear-gradient(0deg, var(--clr-bg-primario) 85%, var(--clr-bg-secundario) 95%);
+  }
+  .hobbie_container{
+    background: var(--clr-bg-secundari);
+    background: linear-gradient(0deg, var(--clr-bg-secundario) 2%, var(--clr-bg-primario) 7%);;
+  }
+  .formacion_container{
+    background-color: var(--clr-bg-secundario);
+  }
+  .proyectos_container{
+    background: var(--clr-bg-primario);
+    background: linear-gradient(0deg, var(--clr-bg-primario) 85%, var(--clr-bg-secundario) 95%);
+  }
+  .contacto_container{
+    background: var(--clr-bg-secundario);
+    background: linear-gradient(0deg, var(--clr-bg-secundario) 85%, var(--clr-bg-primario) 95%);
+  }
+  footer{
+    background:  rgb(44, 120, 206);
+  }
